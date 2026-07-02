@@ -568,3 +568,17 @@ button{
     }
 
 }
+.contact-card{
+    position: relative;
+    z-index: 1;
+}
+
+#chat-button{
+    position: fixed;
+    z-index: 9999;
+}
+
+#chat-box{
+    position: fixed;
+    z-index: 9999;
+}
