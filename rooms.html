@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rooms - The Mantra Hotels</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+    content="The Mantra Hotels offers luxury rooms, premium facilities and exceptional hospitality.">
+
+    <meta name="keywords"
+    content="hotel, luxury hotel, rooms, accommodation, booking, swimming pool">
+
+    <meta name="author"
+    content="Hema Varshini">
+</head>
+
+<body>
+    <div class="menu-container">
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <div id="menu-links" class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="manage_booking.html">Manage Booking</a>
+    </div>
+    </div>
+    <h1>The Mantra Hotels</h1>
+
+
+    <h2>Our Rooms</h2>
+    <div class="rooms-container">
+    <div class="room-card">
+        <img src="images/deluxe-room.png" alt="Deluxe Room">
+        <h3>Deluxe Room</h3>
+        <p>₹3500 per night</p>
+        <a href="deluxe.html">View Details</a>
+    </div>
+
+    <div class="room-card">
+        <img src="images/suite-room.png" alt="Suite Room">
+        <h3>Luxury Suite</h3>
+        <p>₹6000 per night</p>
+        <a href="suite.html">View Details</a>
+    </div>
+
+    <div class="room-card">
+        <img src="images/family-room.png" alt="Family Room">
+        <h3>Family Room</h3>
+        <p>₹4500 per night</p>
+        <a href="family.html">View Details</a>
+    </div>
+    </div>
+    <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu-links");
+
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+    </script>
+    <div id="chat-button">💬</div>
+
+    <div id="chat-box">
+    <div id="chat-header">
+        The Mantra Assistant
+    </div>
+
+    <div id="chat-messages">
+        <p><strong>Bot:</strong> Welcome to The Mantra Hotels! Ask me anything.</p>
+    </div>
+
+    <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message...">
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>

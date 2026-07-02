@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Booking - The Mantra Hotels</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+    content="The Mantra Hotels offers luxury rooms, premium facilities and exceptional hospitality.">
+
+    <meta name="keywords"
+    content="hotel, luxury hotel, rooms, accommodation, booking, swimming pool">
+
+    <meta name="author"
+    content="Hema Varshini">
+</head>
+
+<body>
+
+    <!-- Responsive Menu -->
+    <div class="menu-container">
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            ☰ Menu
+        </button>
+
+        <div id="menu-links" class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="manage_booking.html">Manage Booking</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+    </div>
+
+    <h1>Manage Your Reservation</h1>
+
+    <p>
+        Enter your Booking ID and registered email address
+        to view, modify, or cancel your reservation.
+    </p>
+
+    <form>
+
+        <label for="bookingid">
+            Booking ID
+        </label>
+
+        <br>
+
+        <input
+            type="text"
+            id="bookingid"
+            name="bookingid"
+            placeholder="Enter Booking ID"
+            required>
+
+        <br><br>
+
+        <label for="email">
+            Registered Email Address
+        </label>
+
+        <br>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email Address"
+            required>
+
+        <br><br>
+
+        <button type="submit">
+            Find Reservation
+        </button>
+
+    </form>
+
+    <br><br>
+
+    <h2>Available Actions</h2>
+
+    <button type="button"
+            onclick="viewBooking()">
+        View Reservation Details
+    </button>
+
+    <br><br>
+
+    <button type="button"
+            onclick="modifyBooking()">
+        Modify Reservation
+    </button>
+
+    <br><br>
+
+    <button type="button"
+            onclick="cancelBooking()">
+        Cancel Reservation
+    </button>
+
+    <br><br><br>
+
+    <a href="index.html">
+        ← Back to Home
+    </a>
+
+    <script>
+
+        function toggleMenu() {
+
+            var menu = document.getElementById("menu-links");
+
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            }
+            else {
+                menu.style.display = "block";
+            }
+        }
+
+        function viewBooking() {
+            alert(
+                "Reservation details loaded successfully."
+            );
+        }
+
+        function modifyBooking() {
+            alert(
+                "Reservation modification service is available at reception."
+            );
+        }
+
+        function cancelBooking() {
+
+            let confirmation = confirm(
+                "Are you sure you want to cancel your reservation?"
+            );
+
+            if (confirmation) {
+                alert(
+                    "Your reservation has been cancelled successfully."
+                );
+            }
+            else {
+                alert(
+                    "Your reservation remains active."
+                );
+            }
+        }
+
+    </script>
+    <div id="chat-button">💬</div>
+
+    <div id="chat-box">
+    <div id="chat-header">
+        The Mantra Assistant
+    </div>
+
+    <div id="chat-messages">
+        <p><strong>Bot:</strong> Welcome to The Mantra Hotels! Ask me anything.</p>
+    </div>
+
+    <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message...">
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+    </div>
+    <script src="chatbot.js"></script>
+
+</body>
+
+</html>

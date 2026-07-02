@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mantra Hotels</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Latin Style Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+    content="The Mantra Hotels offers luxury rooms, premium facilities and exceptional hospitality.">
+
+    <meta name="keywords"
+    content="hotel, luxury hotel, rooms, accommodation, booking, swimming pool">
+
+    <meta name="author"
+    content="Hema Varshini">
+</head>
+
+<body>
+    <div class="menu-container">
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <div id="menu-links" class="menu-links">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="manage_booking.html">Manage Booking</a>
+    </div>
+    </div>
+    <img src="images/mantra-logo.png"
+     class="logo"
+     alt="The Mantra Hotels Logo">
+
+    <div class="banner">
+    <span class="star1">✦</span>
+    <span class="star2">✦</span>
+    <span class="star3">✦</span>
+    <span class="star7">✦</span>
+    <h1>
+        THE MANTRA HOTELS
+    </h1>
+    <span class="star4">✦</span>
+    <span class="star6">✦</span>
+    <span class="star5">✦</span>
+    </div>
+
+
+    <section class="about-us">
+    <h2>About Us</h2>
+
+    <p>
+        Welcome to The Mantra Hotels, where luxury meets comfort and hospitality
+        creates unforgettable experiences. Located in a serene and elegant setting,
+        our hotel offers beautifully designed rooms, premium facilities, and
+        exceptional service to make every stay memorable.
+    </p>
+
+    <h3>Why Choose The Mantra Hotels?</h3>
+
+    <ul>
+        <li>✓ Luxurious and comfortable rooms</li>
+        <li>✓ Premium facilities and modern amenities</li>
+        <li>✓ Complimentary high-speed WiFi</li>
+        <li>✓ Exceptional customer service</li>
+        <li>✓ Convenient location and easy accessibility</li>
+        <li>✓ Safe, peaceful, and family-friendly environment</li>
+    </ul>
+    </section>
+
+    <!-- Hotel and Room Images -->
+    <div class="home-gallery">
+
+        <div class="image-card">
+            <img src="images/front-view.png" alt="Hotel Front view">
+        </div>
+
+        <div class="image-card">
+            <img src="images/family-room.png" alt="Family">
+        </div>
+
+        <div class="image-card">
+            <img src="images/deluxe-room.png" alt="Deluxe">
+        </div>
+
+        <div class="image-card">
+            <img src="images/suite-room.png" alt="Suite Room">
+        </div>
+
+    </div>
+    <script>
+    function toggleMenu() {
+        var menu = document.getElementById("menu-links");
+
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+    </script>
+    <div id="chat-button">💬</div>
+
+<div id="chat-box">
+    <div id="chat-header">
+        The Mantra Assistant
+    </div>
+
+    <div id="chat-messages">
+        <p><strong>Bot:</strong> Welcome to The Mantra Hotels! Ask me anything.</p>
+    </div>
+
+    <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message...">
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+</div>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

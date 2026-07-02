@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facilities - The Mantra Hotels</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <div class="menu-container">
+        <button class="menu-btn"
+                onclick="toggleMenu()">
+            ☰ Menu
+        </button>
+
+        <div id="menu-links" class="menu-links">
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="facilities.html">Facilities</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="manage_booking.html">Manage Booking</a>
+        </div>
+    </div>
+
+
+    <h1 class="page-title">Facilities</h1>
+
+
+    <div class="facilities-container">
+
+        <!-- Reception -->
+        <div class="facility-card">
+
+            <img src="images/reception.png"
+                 alt="Reception">
+
+            <h2>Reception Services</h2>
+
+            <ul>
+                <li>24-Hour Front Desk</li>
+                <li>Express Check-in and Check-out</li>
+                <li>Concierge Service</li>
+                <li>Luggage Storage</li>
+                <li>Travel Assistance</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Swimming Pool -->
+        <div class="facility-card">
+
+            <img src="images/swimming-pool.png"
+                 alt="Swimming Pool">
+
+            <h2>Swimming Pool</h2>
+
+            <ul>
+                <li>Outdoor Infinity Pool</li>
+                <li>Poolside Seating Area</li>
+                <li>Children's Pool Section</li>
+                <li>Evening Pool Lighting</li>
+                <li>Pool Towels Provided</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Dining -->
+        <div class="facility-card">
+
+            <img src="images/kitchen.png"
+                 alt="Dining">
+
+            <h2>Food and Dining</h2>
+
+            <ul>
+                <li>Multi-Cuisine Restaurant</li>
+                <li>Complimentary Breakfast</li>
+                <li>24-Hour Room Service</li>
+                <li>Special Dietary Meals</li>
+                <li>Coffee and Beverage Lounge</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Fitness -->
+        <div class="facility-card">
+
+            <img src="images/gym.png"
+                 alt="Gym">
+
+            <h2>Fitness Centre</h2>
+
+            <ul>
+                <li>Modern Exercise Equipment</li>
+                <li>Cardio Training Area</li>
+                <li>Strength Training Zone</li>
+                <li>Personal Trainer Support</li>
+                <li>Open Throughout the Day</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Spa -->
+        <div class="facility-card">
+
+            <img src="images/spa.png"
+                 alt="Spa">
+
+            <h2>Spa and Wellness</h2>
+
+            <ul>
+                <li>Luxury Spa Treatments</li>
+                <li>Aromatherapy Sessions</li>
+                <li>Massage Therapy</li>
+                <li>Steam and Sauna Room</li>
+                <li>Yoga and Meditation Sessions</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Security -->
+        <div class="facility-card">
+
+            <img src="images/security.png"
+                 alt="Security">
+
+            <h2>Safety and Security</h2>
+
+            <ul>
+                <li>24-Hour CCTV Surveillance</li>
+                <li>Electronic Key Card Access</li>
+                <li>Smoke Detectors</li>
+                <li>Emergency Exit Access</li>
+                <li>Professional Security Staff</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <a href="index.html">
+        ← Back to Home
+    </a>
+
+
+    <script>
+        function toggleMenu() {
+
+            var menu =
+                document.getElementById("menu-links");
+
+            if(menu.style.display === "block"){
+                menu.style.display = "none";
+            }
+            else{
+                menu.style.display = "block";
+            }
+        }
+    </script>
+    <div id="chat-button">💬</div>
+
+    <div id="chat-box">
+    <div id="chat-header">
+        The Mantra Assistant
+    </div>
+
+    <div id="chat-messages">
+        <p><strong>Bot:</strong> Welcome to The Mantra Hotels! Ask me anything.</p>
+    </div>
+
+    <input
+        type="text"
+        id="user-input"
+        placeholder="Type your message...">
+
+    <button onclick="sendMessage()">
+        Send
+    </button>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
