@@ -166,6 +166,80 @@ body{
     font-size:18px;
     line-height:1.8;
 }
+.about-us p{
+    background: rgba(255,255,255,0.6);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact-card{
+    width: 85%;
+    margin: 60px auto;
+    padding: 35px;
+    background: linear-gradient(
+        135deg,
+        #234F2D,
+        #1A3A22
+    );
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.contact-card h2{
+    color: #F5E6A6;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-item{
+    width: 220px;
+}
+
+.contact-icon{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact-item p{
+    color: #F5E6A6;
+    font-size: 17px;
+    line-height: 1.7;
+}
+.contact-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before{
+    content: "✦";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    color: #F5E6A6;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.contact-card::after{
+    content: "✦";
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    font-size: 28px;
+    color: #F5E6A6;
+    opacity: 0.8;
+    z-index: 10;
+}
 
 /* ROOM DETAIL PAGES */
 
