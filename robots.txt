@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://the-mantra-hotel.netlify.app/sitemap.xml
